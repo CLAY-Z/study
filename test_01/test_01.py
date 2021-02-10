@@ -103,3 +103,6 @@ class Ui_MainWindow1(object):
         self.pushButton.setText(_translate("MainWindow1", "单位名称："))
         self.menu_file.setTitle(_translate("MainWindow1", "文件"))
         self.menu_set.setTitle(_translate("MainWindow1", "设置"))
+
+    def hww(self):
+        print("he")
