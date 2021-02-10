@@ -105,4 +105,4 @@ class Ui_MainWindow1(object):
         self.menu_set.setTitle(_translate("MainWindow1", "设置"))
 
     def hww(self):
-        print("he")
+        print("hello")
