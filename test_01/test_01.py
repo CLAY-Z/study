@@ -90,3 +90,6 @@ class Ui_MainWindow1(object):
         self.btn_cancel.setText(_translate("MainWindow1", "取消"))
         self.menu_file.setTitle(_translate("MainWindow1", "文件"))
         self.menu_set.setTitle(_translate("MainWindow1", "设置"))
+
+    def hello(self):
+        print("hello, world!")
