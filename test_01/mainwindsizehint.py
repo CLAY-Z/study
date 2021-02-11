@@ -44,6 +44,8 @@ class Ui_MainWindow(object):
         self.pushButton_3.setObjectName("pushButton_3")
         print(self.pushButton_3.sizeHint().width())
         print(self.pushButton_3.sizeHint().height())
+        print(self.pushButton_3.minimumSizeHint().width())
+        print(self.pushButton_3.minimumSizeHint().height())
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
