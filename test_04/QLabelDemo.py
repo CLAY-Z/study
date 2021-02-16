@@ -25,6 +25,9 @@ class QLabelDemo(QWidget):
         self.initUI()
 
     def initUI(self):
+        self.setWindowTitle("标签的应用窗口")
+        self.resize(700, 600)
+
         label1 = QLabel(self)
         label2 = QLabel(self)
         label3 = QLabel(self)
