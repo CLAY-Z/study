@@ -16,7 +16,7 @@ QLabel常用的信号：
 """
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel
-from PyQt5.QtGui import QPalette, QPixmap
+from PyQt5.QtGui import QPalette, QPixmap, QFont
 from PyQt5.QtCore import Qt
 
 class QLabelDemo(QWidget):
@@ -34,6 +34,7 @@ class QLabelDemo(QWidget):
         label4 = QLabel(self)
 
         label1.setText("<font color=yellow>这是第一个标签</font>")
+        label1.setFont(QFont('仿宋', 20))
         label1.setAutoFillBackground(True)
         palette = QPalette()
         palette.setColor(QPalette.Window, Qt.blue)
@@ -43,6 +44,7 @@ class QLabelDemo(QWidget):
         # href="#”,浏览器就会阻止默认的打开新页面的操作，只实现鼠标移上去变小手的效果
         label2.setText("<a href='#'>欢迎使用Python GUI程序</a>")
         label2.setToolTip("这是一个虚假的超链接")
+        label2.setFont(QFont('黑体', 20))
 
         label3.setAlignment(Qt.AlignCenter)
         label3.setToolTip("这是一个图片标签")
@@ -53,6 +55,7 @@ class QLabelDemo(QWidget):
         label4.setText("<a href='https://item.jd.com/12417265.html'>python从菜鸟到高手</a>")
         label4.setAlignment(Qt.AlignRight)
         label4.setToolTip("这是一个真实的超链接")
+        label4.setFont(QFont('宋体', 20))
 
         vbox = QVBoxLayout()
         vbox.addWidget(label1)
